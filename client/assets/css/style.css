@@ -1,3 +1,6 @@
+.boder {
+  border: 1px solid #38444d; }
+
 body {
   background: #15202b;
   color: #f0f1f2; }
@@ -89,6 +92,3 @@ body {
     font-weight: 600;
     font-size: 20px;
     color: #f0f1f2; }
-
-.boder {
-  border: 1px solid #38444d; }
