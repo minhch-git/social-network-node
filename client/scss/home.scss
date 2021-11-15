@@ -1,0 +1,9 @@
+.title_container {
+	border-bottom: 1px solid $border-color;
+	padding: $spacing;
+	span {
+		font-weight: 600;
+		font-size: 20px;
+		color: $text-white;
+	}
+}
