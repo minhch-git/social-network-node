@@ -1,21 +1,5 @@
-body {
-  font-family: 'Poppins', sans-serif; }
-
 .boder {
   border: 1px solid #38444d; }
-
-.button_open-modal {
-  outline: none;
-  border: none;
-  background: transparent; }
-  .button_open-modal i {
-    font-size: 1.8rem;
-    color: #5989a6;
-    opacity: 0.3;
-    transition: all 0.3s ease-in-out; }
-    .button_open-modal i:hover {
-      opacity: 1;
-      color: #ff006a; }
 
 button {
   border: none;
@@ -62,7 +46,6 @@ button {
 
 .date {
   flex: 1; }
-
 
 body {
   background: #15202b;
@@ -155,66 +138,6 @@ body {
     font-weight: 600;
     font-size: 20px;
     color: #f0f1f2; }
-
-.profile .profile_container {
-  padding: 15px; }
-  .profile .profile_container .photo-cover_container {
-    position: relative; }
-
-.cover-image_area {
-  position: relative; }
-  .cover-image_area .cover-image {
-    height: 300px; }
-    .cover-image_area .cover-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 30px; }
-  .cover-image_area .cover-image_actions {
-    position: absolute;
-    bottom: 0;
-    right: 30px; }
-
-.avatar-area {
-  position: absolute;
-  bottom: -80px;
-  left: 30px; }
-  .avatar-area .avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #ff006a; }
-    .avatar-area .avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%; }
-  .avatar-area .avatar_action {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.4);
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out; }
-    .avatar-area .avatar_action .button_open-modal {
-      position: absolute;
-      bottom: 40%;
-      left: 37%; }
-      .avatar-area .avatar_action .button_open-modal i {
-        color: #f91880;
-        transition: 0s;
-        opacity: 1; }
-        .avatar-area .avatar_action .button_open-modal i:hover {
-          color: #f91880; }
-  .avatar-area:hover .avatar_action {
-    visibility: visible;
-    opacity: 1;
-    cursor: pointer; }
 
 .post_form-container {
   display: flex;
