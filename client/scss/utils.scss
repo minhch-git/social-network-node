@@ -6,7 +6,7 @@ button {
 	border: none;
 	padding: 0 4px;
 	background: transparent;
-	color: $greyButtonText;
+	color: $text-grey-dim;
 	border-radius: 50%;
 	transition: 0.4s;
 
@@ -15,16 +15,26 @@ button {
 		pointer-events: none;
 	}
 
-	&:hover {
-		background-color: #d4edff;
-		color: $blue;
-	}
-
 	.pink {
 		color: $pink;
 	}
 	.green {
 		color: green;
+	}
+}
+
+.button_open-modal {
+	outline: none;
+	border: none;
+	background: transparent;
+	font-size: 1.8rem;
+	color: $text-grey-dim;
+	opacity: 0.4;
+	transition: all 0.3s ease-in-out;
+
+	&:hover i {
+		opacity: 1;
+		color: $primary-color;
 	}
 }
 

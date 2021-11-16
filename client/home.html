@@ -375,7 +375,117 @@
 					</div>
 					<!-- PROFILE PAGE -->
 					<div class="profile d-none">
-						<span>This is profile page</span>
+						<!-- tittle -->
+						<div class="title_container">
+							<span>Profile</span>
+						</div>
+						<!-- content -->
+						<div class="profile_container">
+							<!-- Cover image and avatar -->
+							<div class="photo-cover_container">
+								<!-- cover-image -->
+								<div class="cover-image_area">
+									<!-- img -->
+									<div class="cover-image">
+										<img src="./assets/img/bg.jpg" alt="Ảnh bìa" />
+									</div>
+									<!-- icon -->
+									<div class="cover-image_actions">
+										<!-- button open Modal -->
+										<button
+											class="button_open-modal"
+											type="button"
+											data-bs-toggle="modal"
+											data-bs-target="#coverImageModal"
+										>
+											<i class="fas fa-camera"></i>
+										</button>
+									</div>
+								</div>
+								<!-- avatar -->
+								<div class="avatar-area">
+									<!-- img -->
+									<div class="avatar">
+										<img src="./assets/img/avatar.png" alt="Ảnh đại diện" />
+									</div>
+									<!-- icon -->
+									<div class="avatar_action">
+										<!-- button open Modal -->
+										<button
+											class="button_open-modal"
+											type="button"
+											data-bs-toggle="modal"
+											data-bs-target="#avatarModal"
+										>
+											<i class="fas fa-camera"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<!-- Info-user -->
+							<div class="info_container"></div>
+							<!-- Post -->
+						</div>
+					</div>
+
+					<!-- Modal cover-image -->
+					<div class="modal" id="coverImageModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<p class="modal-title text-dark">
+										Bạn muốn thay đổi ảnh bìa mình?
+									</p>
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="modal"
+									></button>
+								</div>
+								<!-- Modal body -->
+								<div class="modal-body">Modal body..</div>
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-danger"
+										data-bs-dismiss="modal"
+									>
+										Close
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal avatar -->
+					<div class="modal" id="avatarModal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<h4 class="modal-title">Modal Heading</h4>
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="modal"
+									></button>
+								</div>
+								<!-- Modal body -->
+								<div class="modal-body">Modal body..</div>
+								<!-- Modal footer -->
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-danger"
+										data-bs-dismiss="modal"
+									>
+										Close
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -383,5 +493,8 @@
 				<div class="col-lg-2">News</div>
 			</div>
 		</div>
+
+		<!-- script bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
