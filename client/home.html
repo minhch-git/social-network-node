@@ -1,86 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Social network DongA</title>
-		<link
-			rel="shortcut icon"
-			href="./assets/img/shuttle.svg"
-			type="image/x-icon"
-		/>
-		<!-- Bootstrap v5 -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
 
-		<!-- Font: open sans -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&display=swap"
-			rel="stylesheet"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Social network DongA</title>
+	<link rel="shortcut icon" href="./assets/img/shuttle.svg" type="image/x-icon" />
+	<!-- Bootstrap v5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-		<!-- Font awesome -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+	<!-- Font: open sans -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet" />
+	<!-- Font: Poppins -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<!-- css -->
-		<link rel="stylesheet" href="./assets/css/style.css" />
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<!-- Sidebar -->
-				<div class="col-3 col-lg-2">
-					<div class="sidebar">
-						<!-- Logo -->
-						<div class="logo">
-							<img src="./assets/img/shuttle.svg" alt="Dong A" />
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- Sidebar -->
+			<div class="col-3 col-lg-2">
+				<div class="sidebar">
+					<!-- Logo -->
+					<div class="logo">
+						<img src="./assets/img/shuttle.svg" alt="Dong A" />
+					</div>
+
+					<!-- Menu -->
+					<div class="menu">
+						<ul class="menu-list">
+							<!-- Home -->
+							<li class="menu-item active"><i class="fas fa-home"></i></li>
+							<!-- Search -->
+							<li class="menu-item"><i class="fas fa-search"></i></li>
+							<!-- Notifications -->
+							<li class="menu-item"><i class="fas fa-bell"></i></li>
+							<!-- Messages -->
+							<li class="menu-item"><i class="far fa-envelope"></i></li>
+							<!-- Profile -->
+							<li class="menu-item"><i class="fas fa-user"></i></li>
+
+							<!-- Logout -->
+							<li class="menu-item"><i class="fas fa-sign-out-alt"></i></li>
+						</ul>
+					</div>
+
+					<!-- Account menu -->
+					<div class="account-menu">
+						<!-- avatar -->
+						<div class="avatar">
+							<span class="dot activate"></span>
+							<img src="./assets/img/avatar.png" alt="avatar" />
 						</div>
 
-						<!-- Menu -->
-						<div class="menu">
-							<ul class="menu-list">
-								<!-- Home -->
-								<li class="menu-item active"><i class="fas fa-home"></i></li>
-								<!-- Search -->
-								<li class="menu-item"><i class="fas fa-search"></i></li>
-								<!-- Notifications -->
-								<li class="menu-item"><i class="fas fa-bell"></i></li>
-								<!-- Messages -->
-								<li class="menu-item"><i class="far fa-envelope"></i></li>
-								<!-- Profile -->
-								<li class="menu-item"><i class="fas fa-user"></i></li>
-
-								<!-- Logout -->
-								<li class="menu-item"><i class="fas fa-sign-out-alt"></i></li>
-							</ul>
-						</div>
-
-						<!-- Account menu -->
-						<div class="account-menu">
-							<!-- avatar -->
-							<div class="avatar">
-								<span class="dot activate"></span>
-								<img src="./assets/img/avatar.png" alt="avatar" />
-							</div>
-
-							<!-- Modal -->
-							<!-- Actions -->
-						</div>
+						<!-- Modal -->
+						<!-- Actions -->
 					</div>
 				</div>
+			</div>
+
+			<!-- Main -->
+			<div class="col-9 col-lg-8 px-0 boder">
+				<!-- HOME PAGE -->
+				<div class="home d-none">
+					<div class="title_container">
+						<span>Home</span>
+					</div>
+
+					<!-- Content -->
+					<div class="posts_container">
+						<!-- post form fields -->
+						<div class="post-form_container">
+							<!-- user img -->
+							<div class="user-image_container">
+								<img src="./assets/img/avatar.png" alt="User's profile picture" />
+							</div>
+
+							<!-- form -->
+							<div class="textarea_container">
+								<textarea id="postTextarea" placeholder="What's happending?"></textarea>
+								<div class="buttons_container">
+									<button id="submitPostButton" disabled="true">Post</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- posts content container -->
+					</div>
+				</div>
+
+
+				<!-- SEARCH PAGE -->
+				<div class="search d-none">
+					<!-- Title -->
+					<div class="title_container">
+						<span>Search</span>
+					</div>
+					<!-- content -->
+				</div>
+
+				<!-- PROFILE PAGE -->
+				<div class="profile">
+					<!-- tittle -->
+					<div class="title_container">
+						<span>Profile</span>
+					</div>
+					<!-- content -->
+					<div class="profile_container">
+						<!-- Cover image and avatar -->
+						<div class="photo-cover_container">
+							<!-- cover-image -->
+							<div class="cover-image_area">
+								<!-- img -->
+								<div class="cover-image">
+									<img src="./assets/img/cover-image.jpg" alt="Ảnh bìa">
 
 				<!-- Main -->
 				<div class="col-9 col-lg-8 px-0 boder">
@@ -100,19 +148,33 @@
 										src="./assets/img/avatar.png"
 										alt="User's profile picture"
 									/>
-								</div>
 
-								<!-- form -->
-								<div class="textarea_container">
-									<textarea
-										id="postTextarea"
-										placeholder="What's happending?"
-									></textarea>
-									<div class="buttons_container">
-										<button id="submitPostButton" disabled="true">Post</button>
-									</div>
+								</div>
+								<!-- icon -->
+								<div class="cover-image_actions">
+									<!-- button open Modal -->
+									<button class="button_open-modal" type="button" data-bs-toggle="modal"
+										data-bs-target="#coverImageModal">
+										<i class="fas fa-camera"></i>
+									</button>
 								</div>
 							</div>
+							<!-- avatar -->
+							<div class="avatar-area">
+								<!-- img -->
+								<div class="avatar">
+									<img src="./assets/img/avatar1.jpg" alt="Ảnh đại diện">
+								</div>
+								<!-- icon -->
+								<div class="avatar_action">
+									<!-- button open Modal -->
+									<button class="button_open-modal" type="button" data-bs-toggle="modal"
+										data-bs-target="#avatarModal">
+										<i class="fas fa-camera"></i>
+									</button>
+								</div>
+							</div>
+
 
 							<!-- posts -->
 							<div class="posts_wrapper">
@@ -362,26 +424,61 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 
-					<!-- SEARCH PAGE -->
-					<div class="search d-none">
-						<!-- Title -->
-						<div class="title_container">
-							<span>Search</span>
 						</div>
-						<!-- content -->
-					</div>
-					<!-- PROFILE PAGE -->
-					<div class="profile d-none">
-						<span>This is profile page</span>
+						<!-- Info-user -->
+						<div class="info_container"></div>
+						<!-- Post -->
 					</div>
 				</div>
+				<!-- Modal cover-image -->
+				<div class="modal" id="coverImageModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<p class="modal-title text-dark">Bạn muốn thay đổi ảnh bìa mình?</p>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+							<!-- Modal body -->
+							<div class="modal-body">
+								Modal body..
+							</div>
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+							</div>
 
-				<!-- News -->
-				<div class="col-lg-2">News</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Modal avatar -->
+				<div class="modal" id="avatarModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">Modal Heading</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+							<!-- Modal body -->
+							<div class="modal-body">
+								Modal body..
+							</div>
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+							</div>
 			</div>
+
+			<!-- News -->
+			<div class="col-lg-2">News</div>
 		</div>
-	</body>
+	</div>
+
+	<!-- script bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
