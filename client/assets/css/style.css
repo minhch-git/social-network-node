@@ -22,10 +22,8 @@ button {
   background: transparent;
   font-size: 1.8rem;
   color: #5989a6;
-  opacity: 0.4;
   transition: all 0.3s ease-in-out; }
   .button_open-modal:hover i {
-    opacity: 1;
     color: #f91880; }
 
 .button_action-sm {
@@ -256,12 +254,12 @@ body {
 .cover-image_area {
   position: relative; }
   .cover-image_area .cover-image {
-    height: 300px; }
+    height: 250px; }
     .cover-image_area .cover-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 30px; }
+      border-radius: 20px; }
   .cover-image_area .cover-image_actions {
     position: absolute;
     bottom: 0;
@@ -271,11 +269,11 @@ body {
 
 .avatar-area {
   position: absolute;
-  bottom: -80px;
+  bottom: -60px;
   left: 30px; }
   .avatar-area .avatar {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 3px solid #ff006a; }
     .avatar-area .avatar img {
@@ -288,8 +286,8 @@ body {
     bottom: 0;
     left: 0;
     z-index: 2;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.4);
     visibility: hidden;
@@ -297,8 +295,9 @@ body {
     transition: all 0.3s ease-in-out; }
     .avatar-area .avatar_action .button_open-modal {
       position: absolute;
-      bottom: 40%;
-      left: 37%; }
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
       .avatar-area .avatar_action .button_open-modal i {
         color: #f91880;
         transition: 0s;
