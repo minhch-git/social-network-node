@@ -5,19 +5,28 @@ button {
   border: none;
   padding: 0 4px;
   background: transparent;
-  color: rgba(39, 39, 39, 0.34);
+  color: #5989a6;
   border-radius: 50%;
   transition: 0.4s; }
   button i,
   button span {
     pointer-events: none; }
-  button:hover {
-    background-color: #d4edff;
-    color: #1fa2f1; }
   button .pink {
     color: #e2225e; }
   button .green {
     color: green; }
+
+.button_open-modal {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 1.8rem;
+  color: #5989a6;
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out; }
+  .button_open-modal:hover i {
+    opacity: 1;
+    color: #f91880; }
 
 .button_action-sm {
   color: #9e9e9e;
@@ -238,3 +247,65 @@ body {
   .post_button-container.green .post_button-container_content.active button,
   .post_button-container.green .post_button-container_content.active span {
     color: green; }
+
+.profile .profile_container {
+  padding: 15px; }
+  .profile .profile_container .photo-cover_container {
+    position: relative; }
+
+.cover-image_area {
+  position: relative; }
+  .cover-image_area .cover-image {
+    height: 300px; }
+    .cover-image_area .cover-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px; }
+  .cover-image_area .cover-image_actions {
+    position: absolute;
+    bottom: 0;
+    right: 30px; }
+    .cover-image_area .cover-image_actions button:hover i {
+      color: #f91880; }
+
+.avatar-area {
+  position: absolute;
+  bottom: -80px;
+  left: 30px; }
+  .avatar-area .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff006a; }
+    .avatar-area .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%; }
+  .avatar-area .avatar_action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out; }
+    .avatar-area .avatar_action .button_open-modal {
+      position: absolute;
+      bottom: 40%;
+      left: 37%; }
+      .avatar-area .avatar_action .button_open-modal i {
+        color: #f91880;
+        transition: 0s;
+        opacity: 1; }
+        .avatar-area .avatar_action .button_open-modal i:hover {
+          color: #f91880; }
+  .avatar-area:hover .avatar_action {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer; }
