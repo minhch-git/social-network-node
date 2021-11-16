@@ -29,11 +29,9 @@ button {
 	background: transparent;
 	font-size: 1.8rem;
 	color: $text-grey-dim;
-	opacity: 0.4;
 	transition: all 0.3s ease-in-out;
 
 	&:hover i {
-		opacity: 1;
 		color: $primary-color;
 	}
 }
