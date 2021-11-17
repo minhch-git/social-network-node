@@ -1,3 +1,71 @@
 .boder {
 	border: 1px solid $border-color;
 }
+
+button {
+	border: none;
+	padding: 0 4px;
+	background: transparent;
+	color: $text-grey-dim;
+	border-radius: 50%;
+	transition: 0.4s;
+
+	i,
+	span {
+		pointer-events: none;
+	}
+
+	.pink {
+		color: $pink;
+	}
+	.green {
+		color: green;
+	}
+}
+
+.button_open-modal {
+	outline: none;
+	border: none;
+	background: transparent;
+	font-size: 1.8rem;
+	color: $text-grey-dim;
+	transition: all 0.3s ease-in-out;
+
+	&:hover i {
+		color: $primary-color;
+	}
+}
+
+.button_action-sm {
+	color: $greyText;
+	font-size: 12px;
+	border-radius: 50%;
+	padding: 2px 6px;
+	transition: 0.4s;
+	border: 0;
+	background-color: transparent;
+	&:hover {
+		color: $pink;
+		background-color: rgba($color: $grey, $alpha: 0.2);
+	}
+}
+
+.displayName {
+	text-decoration: none;
+	font-weight: bold;
+	color: $grey-dim;
+	transition: 0.3s;
+
+	&:hover {
+		text-decoration: underline;
+		color: $pink;
+	}
+}
+.username {
+	color: $text-grey;
+	font-size: 13px;
+}
+.date {
+	@extend .username;
+	flex: 1;
+}
