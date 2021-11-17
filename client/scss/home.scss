@@ -1,17 +1,17 @@
 .title_container {
-	border-bottom: 1px solid $border-color;
+	border-bottom: 1px solid $borderColor;
 	padding: $spacing;
 	span {
 		font-weight: 600;
 		font-size: 20px;
-		color: $text-white;
+		color: $white;
 	}
 }
 
 .post_form-container {
 	display: flex;
 	padding: $spacing;
-	border-bottom: 8px solid $border-color;
+	border-bottom: 8px solid $borderColor;
 }
 
 .user_image-container {
@@ -39,7 +39,7 @@
 		outline: none;
 		height: 68px;
 		background-color: transparent;
-		color: $text-grey;
+		color: $textGrey;
 
 		&::-webkit-scrollbar-track {
 			border-radius: 4px;
@@ -51,19 +51,20 @@
 		}
 		&::-webkit-scrollbar-thumb {
 			border-radius: 10px;
-			background-color: $grey-dim;
+			background-color: $greyDim;
 		}
 	}
 
 	#submitPostButton {
-		background-color: $primary-color;
+		background-color: $primaryColor;
 		padding: 6px 13px;
 		border-radius: 40px;
 		border: none;
 		color: white;
 
 		&:disabled {
-			background-color: $pink-light;
+			background-color: #b5496b;
+			color: #c7c7c7;
 		}
 	}
 }
@@ -72,13 +73,13 @@
 	flex-shrink: 0;
 	align-items: center;
 	padding: $spacing;
-	border-bottom: 1px solid $border-color;
+	border-bottom: 1px solid $borderColor;
 
 	&:first-child {
 		margin-top: $spacing;
 	}
 	// &_action-container a {
-	// 	color: $text-grey;
+	// 	color: $textGrey;
 	// 	text-decoration: none;
 	// }
 
@@ -128,7 +129,7 @@
 	flex: 1;
 
 	button {
-		color: $text-grey;
+		color: $textGrey;
 		&:hover {
 			background-color: rgba($color: $grey, $alpha: 0.2);
 			color: $blue;

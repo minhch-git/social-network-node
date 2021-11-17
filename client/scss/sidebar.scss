@@ -1,6 +1,6 @@
 body {
-	background: $bg-color;
-	color: $text-white;
+	background: $bgColor;
+	color: $white;
 }
 .sidebar {
 	max-height: 100vh;
@@ -15,7 +15,7 @@ body {
 .logo {
 	max-width: 60px;
 	max-height: 120px;
-	border-bottom: 1px solid $primary-color;
+	border-bottom: 1px solid $primaryColor;
 	margin-bottom: 20px;
 	object-fit: cover;
 	border-radius: 50%;
@@ -40,7 +40,7 @@ body {
 	&-item {
 		font-size: 28px;
 		list-style: none;
-		color: $text-white;
+		color: $white;
 		font-weight: 300;
 		padding: 2px 8px;
 		cursor: pointer;
@@ -48,12 +48,12 @@ body {
 		margin-bottom: 12px;
 		transition: all 0.3s ease-in;
 		&.active {
-			color: $primary-color;
+			color: $primaryColor;
 		}
 
 		&:hover:not(.active) {
-			background-color: rgba($color: $primary-color, $alpha: 0.2);
-			color: rgba($color: $primary-color, $alpha: 0.8);
+			background-color: rgba($color: $primaryColor, $alpha: 0.2);
+			color: rgba($color: $primaryColor, $alpha: 0.8);
 		}
 	}
 }
@@ -93,7 +93,7 @@ body {
 		height: 8px;
 		width: 8px;
 		border-radius: 50%;
-		background: $text-grey;
+		background: $textGrey;
 		z-index: 1322;
 
 		&.activate {
