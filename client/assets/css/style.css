@@ -308,3 +308,113 @@ body {
     visibility: visible;
     opacity: 1;
     cursor: pointer; }
+
+.title_container p {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600; }
+  .title_container p i {
+    color: #5352ed;
+    padding-right: 14px; }
+
+.message_chat_name {
+  padding: 24px 0;
+  display: flex;
+  align-items: center; }
+  .message_chat_name .message_chat_icon {
+    display: flex;
+    justify-content: space-evenly; }
+  .message_chat_name a {
+    text-decoration: none;
+    color: #5352ed; }
+    .message_chat_name a:hover {
+      opacity: 0.7;
+      transition: .5s; }
+
+.message_chat_page {
+  height: 550px;
+  overflow-y: scroll; }
+  .message_chat_page .message_time_chat p {
+    text-align: center;
+    padding: 12px 0; }
+
+.message_chat_page::-webkit-scrollbar {
+  width: 5px;
+  background-color: #F5F5F5;
+  border-radius: 5px; }
+
+.message_chat_page::-webkit-scrollbar-thumb {
+  background-color: #374950;
+  border-radius: 5px; }
+
+.message_chat_box ::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.message_received {
+  margin-bottom: 12px;
+  padding: 12px 0px;
+  display: block; }
+  .message_received .message_received_img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
+    .message_received .message_received_img img {
+      width: 100%;
+      height: 100%;
+      background-size: cover; }
+  .message_received .message_received_msg {
+    width: auto;
+    padding: 0 0 0 12px;
+    vertical-align: top;
+    display: inline-block; }
+  .message_received .message_received_text {
+    width: 100%; }
+    .message_received .message_received_text p {
+      background: #374950 none repeat scroll 0 0;
+      border-radius: 12px;
+      padding: 6px 12px; }
+    .message_received .message_received_text span {
+      display: none; }
+    .message_received .message_received_text:hover span {
+      display: block;
+      transition: 1s;
+      font-size: 0.8rem;
+      margin-top: -12px; }
+    .message_received .message_received_text .message_received_time {
+      float: right; }
+
+.message_owner {
+  float: right;
+  width: 100%; }
+  .message_owner .message_owner_img {
+    float: right; }
+  .message_owner .message_owner_msg {
+    padding: 0 12px 0 0;
+    vertical-align: top;
+    float: right; }
+  .message_owner .message_owner_text p {
+    background-color: #5352ed; }
+  .message_owner .message_owner_text .message_owner_time {
+    float: left; }
+
+.message_chat_send i {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #5352ed;
+  padding-top: 6px; }
+  .message_chat_send i:hover {
+    opacity: 0.7;
+    transition: .5s; }
+
+.message_chat_send input {
+  width: 100%;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  color: #f0f1f2;
+  background-color: #15202b;
+  border: 1px solid #38444d;
+  border-radius: 8px; }
