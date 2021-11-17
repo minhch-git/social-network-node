@@ -1,12 +1,12 @@
 .boder {
-	border: 1px solid $border-color;
+	border: 1px solid $borderColor;
 }
 
 button {
 	border: none;
 	padding: 0 4px;
 	background: transparent;
-	color: $text-grey-dim;
+	color: $textGreyDim;
 	border-radius: 50%;
 	transition: 0.4s;
 
@@ -28,11 +28,11 @@ button {
 	border: none;
 	background: transparent;
 	font-size: 1.8rem;
-	color: $text-grey-dim;
+	color: $textGreyDim;
 	transition: all 0.3s ease-in-out;
 
 	&:hover i {
-		color: $primary-color;
+		color: $primaryColor;
 	}
 }
 
@@ -53,7 +53,7 @@ button {
 .displayName {
 	text-decoration: none;
 	font-weight: bold;
-	color: $grey-dim;
+	color: $greyDim;
 	transition: 0.3s;
 
 	&:hover {
@@ -62,10 +62,35 @@ button {
 	}
 }
 .username {
-	color: $text-grey;
+	color: $textGrey;
 	font-size: 13px;
 }
 .date {
 	@extend .username;
 	flex: 1;
+}
+
+.bg-grey-dim {
+	background-color: $bgColor;
+}
+
+.text-primary {
+	color: $primaryColor !important;
+}
+
+// custom theme modal bootstrap
+.modal {
+	.modal-title {
+		font-size: 16px;
+	}
+	.button-close {
+		background: transparent;
+		color: #7a7a7a;
+		transition: all 0.3s ease-in-out;
+		font-size: 20px;
+
+		&:hover {
+			color: $primaryColor;
+		}
+	}
 }

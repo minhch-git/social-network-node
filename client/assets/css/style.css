@@ -54,6 +54,23 @@ button {
 .date {
   flex: 1; }
 
+.bg-grey-dim {
+  background-color: #15202b; }
+
+.text-primary {
+  color: #f91880 !important; }
+
+.modal .modal-title {
+  font-size: 16px; }
+
+.modal .button-close {
+  background: transparent;
+  color: #7a7a7a;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px; }
+  .modal .button-close:hover {
+    color: #f91880; }
+
 body {
   background: #15202b;
   color: #f0f1f2; }
@@ -189,7 +206,8 @@ body {
     border: none;
     color: white; }
     .textarea_container #submitPostButton:disabled {
-      background-color: #c5476f; }
+      background-color: #b5496b;
+      color: #c7c7c7; }
 
 .post {
   flex-shrink: 0;
@@ -309,11 +327,11 @@ body {
     opacity: 1;
     cursor: pointer; }
 
-.title_container p {
+.message-title {
   padding-top: 10px;
   font-size: 1.2rem;
   font-weight: 600; }
-  .title_container p i {
+  .message-title i {
     color: #5352ed;
     padding-right: 14px; }
 
@@ -329,7 +347,7 @@ body {
     color: #5352ed; }
     .message_chat_name a:hover {
       opacity: 0.7;
-      transition: .5s; }
+      transition: 0.5s; }
 
 .message_chat_page {
   height: 550px;
@@ -340,7 +358,7 @@ body {
 
 .message_chat_page::-webkit-scrollbar {
   width: 5px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 5px; }
 
 .message_chat_page::-webkit-scrollbar-thumb {
@@ -348,7 +366,7 @@ body {
   border-radius: 5px; }
 
 .message_chat_box ::after {
-  content: "";
+  content: '';
   display: block;
   clear: both; }
 
@@ -407,7 +425,7 @@ body {
   padding-top: 6px; }
   .message_chat_send i:hover {
     opacity: 0.7;
-    transition: .5s; }
+    transition: 0.5s; }
 
 .message_chat_send input {
   width: 100%;
