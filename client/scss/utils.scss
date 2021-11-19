@@ -35,6 +35,15 @@ button {
 		color: $primaryColor;
 	}
 }
+.follow{
+	padding: 8px;
+	background-color: $primaryColor;
+	color: white;
+	border-radius: 10px;
+	&:hover {
+		background-color: #c61172;
+	}
+}
 
 .button_action-sm {
 	color: $greyText;

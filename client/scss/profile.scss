@@ -2,8 +2,16 @@
 	.profile_container {
 		padding: $spacing;
 
-		.photo-cover_container {
-			position: relative;
+		.header-profile{
+			background-color: #3f4d6b;
+			border-radius: 20px;
+			.photo-cover_container {
+				position: relative;
+			}
+		}
+		.choose-user_container{
+			background-color: #3f4d6b;
+			border-radius: 20px 20px 0 0;
 		}
 	}
 }
@@ -37,7 +45,7 @@
 
 .avatar-area {
 	position: absolute;
-	bottom: -60px;
+	bottom: -33%;
 	left: 30px;
 
 	.avatar {
@@ -85,5 +93,164 @@
 		visibility: visible;
 		opacity: 1;
 		cursor: pointer;
+	}
+}
+
+// info user
+.info-profile_container{
+	.content-info_container{
+		padding-left: 3rem;
+	}
+	.follow-content_container{
+	height: 100%;
+}
+}
+.follow-update{
+	padding: 10px 6px;
+}
+// Post or Follower
+.choose-action{
+	border-bottom: 1px solid $borderColor;
+	.post-choose{
+		border-right: 1px solid $borderColor;
+	}
+	h5{
+		padding: 5px 0;
+	}
+	.choose{
+		cursor: pointer;
+	}
+}
+// class active
+.active-choose {
+	background-color: #5a6f99;
+	border-radius: 20px;
+	color: #c9005e;
+}
+
+.follower_image-container{
+	cursor: pointer;
+}
+
+// follower
+.follower_wrapper{
+	.follower-content_container{
+		border-bottom: 0.5px solid $borderColor;
+		.follower-choose-action_container{
+			height: 100%;
+			.message-follower{
+				background-color: $purple;
+				&:hover{
+					background-color: $purpleDark;
+				}
+			}
+		}
+	}
+}
+
+.modal {
+	.modal-body {
+		img{
+			max-width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+//Responsive
+@media (min-width: 1201px) {
+	.follower_wrapper {
+		.follower-content_container{
+			.follower-choose-action_container{
+				justify-content: space-between !important;
+			}
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.info-profile_container{
+		.follow-content_container {
+			display: block !important;
+			text-align: end;
+			padding-top: 10%;
+			.following {
+				margin-bottom: 5%;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.info-profile_container{
+		.content-info_container{
+			text-align: center;
+			.info-users_details{
+				display: flex;
+				justify-content: center;
+				.default{
+					padding-left: 0 !important;
+					padding-right: 1rem !important;
+				}
+			}
+		}
+		.follow-content_container {
+			display: block !important;
+			text-align: center;
+			padding-top: 4%;
+			.following {
+				margin-right: 5%;
+				margin-bottom: 2%;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.avatar-area {
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.cover-image_area {
+		.cover-image{
+			height: $heightCoverImageResponsive;
+		}
+	}
+	.info-profile_container{
+		.content-info_container{
+			text-align: center;
+			padding-top: 4.5rem !important;
+			.info-users_details{
+				display: flex;
+				justify-content: space-between;
+				.fas {
+					display: block !important;
+				}
+				.default{
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+			}
+		}
+	}
+
+		// follower list
+	.follower_wrapper {
+		.follower-content_container{
+			.follower-info{
+				justify-content: center;
+				margin-bottom: 2%;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.info-profile_container{
+		.follow-content_container {
+			text-align: center;
+			.following {
+				margin-bottom: 2%;
+				margin-right: 0;
+			}
+		}
 	}
 }

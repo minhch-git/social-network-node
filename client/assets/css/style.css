@@ -26,6 +26,14 @@ button {
   .button_open-modal:hover i {
     color: #f91880; }
 
+.follow {
+  padding: 8px;
+  background-color: #f91880;
+  color: white;
+  border-radius: 10px; }
+  .follow:hover {
+    background-color: #c61172; }
+
 .button_action-sm {
   color: #9e9e9e;
   font-size: 12px;
@@ -266,8 +274,14 @@ body {
 
 .profile .profile_container {
   padding: 15px; }
-  .profile .profile_container .photo-cover_container {
-    position: relative; }
+  .profile .profile_container .header-profile {
+    background-color: #3f4d6b;
+    border-radius: 20px; }
+    .profile .profile_container .header-profile .photo-cover_container {
+      position: relative; }
+  .profile .profile_container .choose-user_container {
+    background-color: #3f4d6b;
+    border-radius: 20px 20px 0 0; }
 
 .cover-image_area {
   position: relative; }
@@ -287,7 +301,7 @@ body {
 
 .avatar-area {
   position: absolute;
-  bottom: -60px;
+  bottom: -33%;
   left: 30px; }
   .avatar-area .avatar {
     width: 120px;
@@ -326,6 +340,102 @@ body {
     visibility: visible;
     opacity: 1;
     cursor: pointer; }
+
+.info-profile_container .content-info_container {
+  padding-left: 3rem; }
+
+.info-profile_container .follow-content_container {
+  height: 100%; }
+
+.follow-update {
+  padding: 10px 6px; }
+
+.choose-action {
+  border-bottom: 1px solid #38444d; }
+  .choose-action .post-choose {
+    border-right: 1px solid #38444d; }
+  .choose-action h5 {
+    padding: 5px 0; }
+  .choose-action .choose {
+    cursor: pointer; }
+
+.active-choose {
+  background-color: #5a6f99;
+  border-radius: 20px;
+  color: #c9005e; }
+
+.follower_image-container {
+  cursor: pointer; }
+
+.follower_wrapper .follower-content_container {
+  border-bottom: 0.5px solid #38444d; }
+  .follower_wrapper .follower-content_container .follower-choose-action_container {
+    height: 100%; }
+    .follower_wrapper .follower-content_container .follower-choose-action_container .message-follower {
+      background-color: #ff00dc; }
+      .follower_wrapper .follower-content_container .follower-choose-action_container .message-follower:hover {
+        background-color: #b519a0; }
+
+.modal .modal-body img {
+  max-width: 100%;
+  object-fit: cover; }
+
+@media (min-width: 1201px) {
+  .follower_wrapper .follower-content_container .follower-choose-action_container {
+    justify-content: space-between !important; } }
+
+@media (max-width: 1200px) {
+  .info-profile_container .follow-content_container {
+    display: block !important;
+    text-align: end;
+    padding-top: 10%; }
+    .info-profile_container .follow-content_container .following {
+      margin-bottom: 5%; } }
+
+@media (max-width: 992px) {
+  .info-profile_container .content-info_container {
+    text-align: center; }
+    .info-profile_container .content-info_container .info-users_details {
+      display: flex;
+      justify-content: center; }
+      .info-profile_container .content-info_container .info-users_details .default {
+        padding-left: 0 !important;
+        padding-right: 1rem !important; }
+  .info-profile_container .follow-content_container {
+    display: block !important;
+    text-align: center;
+    padding-top: 4%; }
+    .info-profile_container .follow-content_container .following {
+      margin-right: 5%;
+      margin-bottom: 2%; } }
+
+@media (max-width: 768px) {
+  .avatar-area {
+    left: 50%;
+    transform: translate(-50%); }
+  .cover-image_area .cover-image {
+    height: 200px; }
+  .info-profile_container .content-info_container {
+    text-align: center;
+    padding-top: 4.5rem !important; }
+    .info-profile_container .content-info_container .info-users_details {
+      display: flex;
+      justify-content: space-between; }
+      .info-profile_container .content-info_container .info-users_details .fas {
+        display: block !important; }
+      .info-profile_container .content-info_container .info-users_details .default {
+        padding-left: 0 !important;
+        padding-right: 0 !important; }
+  .follower_wrapper .follower-content_container .follower-info {
+    justify-content: center;
+    margin-bottom: 2%; } }
+
+@media (max-width: 600px) {
+  .info-profile_container .follow-content_container {
+    text-align: center; }
+    .info-profile_container .follow-content_container .following {
+      margin-bottom: 2%;
+      margin-right: 0; } }
 
 .scroll {
   overflow-y: scroll;
