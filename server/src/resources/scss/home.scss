@@ -1,0 +1,157 @@
+.title_container {
+	border-bottom: 1px solid $borderColor;
+	padding: $spacing;
+	span {
+		font-weight: 600;
+		font-size: 20px;
+		color: $white;
+	}
+}
+
+.post_form-container {
+	display: flex;
+	padding: $spacing;
+	border-bottom: 8px solid $borderColor;
+}
+
+.user_image-container {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: $blue;
+
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+}
+
+.textarea_container {
+	flex: 1;
+	padding-left: $spacing;
+
+	textarea {
+		width: 100%;
+		border: none;
+		resize: none;
+		font-size: 18px;
+		outline: none;
+		height: 68px;
+		background-color: transparent;
+		color: $textGrey;
+
+		&::-webkit-scrollbar-track {
+			border-radius: 4px;
+			background-color: $grey;
+		}
+		&::-webkit-scrollbar {
+			width: 4px;
+			background-color: $grey;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: $greyDim;
+		}
+	}
+
+	#submitPostButton {
+		background-color: $primaryColor;
+		padding: 6px 13px;
+		border-radius: 40px;
+		border: none;
+		color: white;
+
+		&:disabled {
+			background-color: #b5496b;
+			color: #c7c7c7;
+		}
+	}
+}
+
+.post {
+	flex-shrink: 0;
+	align-items: center;
+	padding: $spacing;
+	border-bottom: 1px solid $borderColor;
+
+	&:first-child {
+		margin-top: $spacing;
+	}
+	// &_action-container a {
+	// 	color: $textGrey;
+	// 	text-decoration: none;
+	// }
+
+	&_main-content-container {
+		flex: 1;
+		display: flex;
+	}
+}
+
+.post_content-container {
+	padding-left: $spacing;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	a,
+	span {
+		padding-right: 5px;
+	}
+}
+
+.post_header {
+	align-items: center;
+	display: flex;
+}
+
+.post_body {
+	flex: 1;
+	padding-top: 8px;
+	padding-bottom: $spacing;
+}
+
+.post_footer {
+	display: flex;
+	align-items: center;
+}
+
+.reply_flag {
+	margin-bottom: 5px;
+	font-size: 14px;
+
+	a {
+		color: $blue;
+	}
+}
+
+.post_button-container {
+	flex: 1;
+
+	button {
+		color: $textGrey;
+		&:hover {
+			background-color: rgba($color: $grey, $alpha: 0.2);
+			color: $blue;
+		}
+	}
+
+	&_content {
+		span {
+			font-size: 15px;
+		}
+	}
+
+	&.pink &_content.active {
+		button,
+		span {
+			color: $pink;
+		}
+	}
+	&.green &_content.active {
+		button,
+		span {
+			color: green;
+		}
+	}
+}

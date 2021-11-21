@@ -1,0 +1,248 @@
+<!-- -------------------------------------------- -->
+<!-- ----------------- MODAL -------------------- -->
+<!-- -------------------------------------------- -->
+<!-- Modal: change cover image -->
+<div class="modal" id="coverImageModal">
+  <div class="modal-dialog">
+    <div class="modal-content bg-grey-dim">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <p class="modal-title text-primary">Bạn muốn thay đổi ảnh bìa mình?</p>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <label for=""></label>
+        <input type="file" name="cover-image" id="coverImageChange" />
+        <div class="container-fluid mt-3">
+          <div class="row">
+            <div class="col-lg-12">
+              <img
+                src="https://cdn.pixabay.com/photo/2021/11/10/18/21/woman-6784555_960_720.jpg"
+                alt="Ảnh bìa"
+              />
+              <button
+                type="button"
+                class="btn btn-success btn-sm mt-2"
+                data-bs-dismiss="modal"
+              >
+                Sửa
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-success btn-sm"
+          data-bs-dismiss="modal"
+        >
+          Yes
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          data-bs-dismiss="modal"
+        >
+          No
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: change avatar -->
+<div class="modal" id="avatarModal">
+  <div class="modal-dialog">
+    <div class="modal-content bg-grey-dim">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <p class="modal-title text-primary">Bạn muốn thay đổi avatar mình?</p>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+        ></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <label for=""></label>
+        <input type="file" name="avatar" id="avatarChange" />
+        <div class="container-fluid mt-3">
+          <div class="row">
+            <div class="col-lg-12">
+              <img
+                src="https://cdn.pixabay.com/photo/2021/11/10/18/21/woman-6784555_960_720.jpg"
+                alt="Ảnh bìa"
+              />
+              <button
+                type="button"
+                class="btn btn-success btn-sm mt-2"
+                data-bs-dismiss="modal"
+              >
+                Sửa
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-success btn-sm"
+          data-bs-dismiss="modal"
+        >
+          Yes
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          data-bs-dismiss="modal"
+        >
+          No
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: pin post -->
+<div class="modal" id="pinPostModal">
+  <div class="modal-dialog">
+    <div class="modal-content bg-grey-dim">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <p class="modal-title text-primary">
+          Bạn viết này sẽ được xuất hiện đầu tiên?
+        </p>
+        <button type="button" class="button-close" data-bs-dismiss="modal">
+          &times;
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <!-- posts content container -->
+        <div class="post mt-0 border-0">
+          <!-- <div class="post__action-container">${retweetText}</div> -->
+          <div class="post_main-content-container">
+            <!-- avatar -->
+            <div class="user_image-container">
+              <img src="./assets/img/avatar.png" alt="User's profile picture" />
+            </div>
+
+            <!-- post content -->
+            <div class="post_content-container">
+              <!-- post header -->
+              <div class="post_header">
+                <!-- info -->
+                <a class="displayName" href="/profile/">minhch</a>
+                <span class="username">@minhch</span>
+                <span class="date">3 giờ</span>
+              </div>
+              <!-- post body -->
+              <div class="post_body">
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat totam quod, quae id vero similique iste ut, animi,
+                  placeat praesentium distinctio dolorem sed expedita pariatur
+                  provident? Libero odit quia eligendi.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-success btn-sm"
+          data-bs-dismiss="modal"
+        >
+          Yes
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          data-bs-dismiss="modal"
+        >
+          No
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: delete post -->
+<div class="modal" id="deletePostModal">
+  <div class="modal-dialog">
+    <div class="modal-content bg-grey-dim">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <p class="modal-title text-primary">
+          Bài viết này sẽ được xóa sau khi bạn xác nhận?
+        </p>
+        <button type="button" class="button-close" data-bs-dismiss="modal">
+          &times;
+        </button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <!-- posts content container -->
+        <div class="post mt-0 border-0">
+          <!-- <div class="post__action-container">${retweetText}</div> -->
+          <div class="post_main-content-container">
+            <!-- avatar -->
+            <div class="user_image-container">
+              <img src="./assets/img/avatar.png" alt="User's profile picture" />
+            </div>
+
+            <!-- post content -->
+            <div class="post_content-container">
+              <!-- post header -->
+              <div class="post_header">
+                <!-- info -->
+                <a class="displayName" href="/profile/">minhch</a>
+                <span class="username">@minhch</span>
+                <span class="date">3 giờ</span>
+              </div>
+              <!-- post body -->
+              <div class="post_body">
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat totam quod, quae id vero similique iste ut, animi,
+                  placeat praesentium distinctio dolorem sed expedita pariatur
+                  provident? Libero odit quia eligendi.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-success btn-sm"
+          data-bs-dismiss="modal"
+        >
+          Yes
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger btn-sm"
+          data-bs-dismiss="modal"
+        >
+          No
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

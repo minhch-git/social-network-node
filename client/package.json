@@ -1,0 +1,12 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "scsstocss": "node-sass -w scss/main.scss assets/css/style.css"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

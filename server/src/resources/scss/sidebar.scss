@@ -1,0 +1,107 @@
+body {
+  background: $bgColor;
+  color: $white;
+}
+.sidebar {
+  max-height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  padding-right: $spacing;
+}
+
+.logo {
+  max-width: 60px;
+  max-height: 120px;
+  border-bottom: 1px solid $primaryColor;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 12px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.menu {
+  flex: 1;
+
+  &-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &-item {
+    font-size: 28px;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    a {
+      color: $white;
+      font-weight: 300;
+      padding: 2px 8px;
+      display: inline-block;
+      border-radius: 5px;
+      margin-bottom: 12px;
+      transition: all 0.3s ease-in;
+    }
+    &.active a {
+      color: $primaryColor;
+    }
+
+    &:hover:not(.active) a {
+      background-color: rgba($color: $primaryColor, $alpha: 0.2);
+      color: rgba($color: $primaryColor, $alpha: 0.8);
+    }
+  }
+}
+
+.account-menu {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  margin-bottom: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  span.dot {
+    position: absolute;
+    display: block;
+    bottom: -2px;
+    right: 4px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: $textGrey;
+    z-index: 1322;
+
+    &.activate {
+      background-color: #31a24c;
+    }
+  }
+}

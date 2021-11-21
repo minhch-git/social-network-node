@@ -1,0 +1,415 @@
+<% extend('../master') %>
+
+<!-- -------------------------------------------- -->
+<!-- -------------- PROFILE PAGE ---------------- -->
+<!-- -------------------------------------------- -->
+<div class="profile">
+  <!-- tittle -->
+  <div class="title_container">
+    <span>Profile</span>
+  </div>
+  <!-- content -->
+  <div class="profile_container">
+    <div class="header-profile pb-3">
+      <!-- Cover image and avatar -->
+      <div class="photo-cover_container">
+        <!-- cover-image -->
+        <div class="cover-image_area">
+          <!-- img -->
+          <div class="cover-image">
+            <img src="./assets/img/bg.jpg" alt="Ảnh bìa" />
+          </div>
+          <!-- icon -->
+          <div class="cover-image_actions">
+            <!-- button open Modal -->
+            <button
+              class="button_open-modal"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#coverImageModal"
+            >
+              <i class="fas fa-camera"></i>
+            </button>
+          </div>
+        </div>
+        <!-- avatar -->
+        <div class="avatar-area">
+          <!-- img -->
+          <div class="avatar">
+            <img src="./assets/img/avatar.png" alt="Ảnh đại diện" />
+          </div>
+          <!-- icon -->
+          <div class="avatar_action">
+            <!-- button open Modal -->
+            <button
+              class="button_open-modal"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#avatarModal"
+            >
+              <i class="fas fa-camera"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Info-user -->
+      <div class="info-profile_container container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
+          <!--info -->
+          <div class="col-12 col-sm-12 col-md-10 col-lg-5 col-xl-4">
+            <div class="content-info_container pt-3">
+              <!-- name -->
+              <h3 class="name-user">Minhch</h3>
+              <!-- info-details -->
+              <div class="info-users_details">
+                <!-- gender -->
+                <div class="gender-user">
+                  <i class="fas fa-venus-mars d-inline"></i>
+                  <span class="px-2 default">Nam</span>
+                </div>
+                <!-- Birthday -->
+                <div class="birthday-user">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span class="px-2 default">25-11-1999</span>
+                </div>
+                <!-- address -->
+                <div class="address-user">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="px-2 default">Bình Định</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- following and follower -->
+          <div class="col-12 col-md-12 col-lg-5 col-xl-6">
+            <div
+              class="
+                follow-content_container
+                d-flex
+                justify-content-between
+                align-items-end
+              "
+            >
+              <!-- following -->
+              <button class="follow following">
+                <i class="fas fa-heart"></i>Following <span>(30)</span>
+              </button>
+              <!-- follower -->
+              <button class="follow">
+                <i class="fas fa-heart"></i>Follower <span>(4)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Post and follower -->
+    <div class="choose-user_container pt-3 mt-3">
+      <!-- Post or Follower-->
+      <div class="container-fluid text-center choose-action">
+        <div class="row">
+          <!-- Post -->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="post-choose choose">
+              <h5>Post</h5>
+            </div>
+          </div>
+          <!-- User -->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="follower-choose choose active-choose">
+              <h5>Users</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Post list -->
+      <div class="posts_wrapper mt-4 d-none">
+        <!-- posts content container -->
+        <div class="post">
+          <!-- <div class="post__action-container">${retweetText}</div> -->
+          <div class="post_main-content-container">
+            <!-- avatar -->
+            <div class="user_image-container follower_image-container">
+              <img src="./assets/img/avatar.png" alt="User's profile picture" />
+            </div>
+
+            <!-- post content -->
+            <div class="post_content-container">
+              <!-- post header -->
+              <div class="post_header">
+                <!-- info -->
+                <a class="displayName" href="/profile/">minhch</a>
+                <span class="username">@minhch</span>
+                <span class="date">3 giờ</span>
+
+                <!-- buttons -->
+                <button
+                  class="button_open-modal button_action-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pinPostModal"
+                >
+                  <i class="remove-pointer-events fas fa-thumbtack"></i>
+                </button>
+                <button
+                  class="button_open-modal button_action-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#deletePostModal"
+                >
+                  <i class="remove-pointer-events fas fa-times"></i>
+                </button>
+              </div>
+              <!-- post body -->
+              <div class="post_body">
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat totam quod, quae id vero similique iste ut, animi,
+                  placeat praesentium distinctio dolorem sed expedita pariatur
+                  provident? Libero odit quia eligendi.</span
+                >
+              </div>
+
+              <!-- post footer -->
+              <div class="post_footer">
+                <div class="post_button-container">
+                  <div class="post_button-container_content">
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#replyModal"
+                    >
+                      <i class="far fa-comment"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="post_button-container green">
+                  <div
+                    class="
+                      post_button-container_content
+                      active
+                      remove-pointer-events
+                    "
+                  >
+                    <button class="retweet-button">
+                      <i class="fas fa-retweet"></i>
+                    </button>
+                    <span class="number-retweets">2</span>
+                  </div>
+                </div>
+                <div class="post_button-container pink">
+                  <div class="post_button-container_content active">
+                    <button class="like-button">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <span class="number-likes">32</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- posts content container -->
+        <div class="post d-none">
+          <!-- <div class="post__action-container">${retweetText}</div> -->
+          <div class="post_main-content-container">
+            <!-- avatar -->
+            <div class="user_image-container follower_image-container">
+              <img src="./assets/img/avatar.png" alt="User's profile picture" />
+            </div>
+
+            <!-- post content -->
+            <div class="post_content-container">
+              <!-- post header -->
+              <div class="post_header">
+                <!-- info -->
+                <a class="displayName" href="/profile/">minhch</a>
+                <span class="username">@minhch</span>
+                <span class="date">3 giờ</span>
+
+                <!-- buttons -->
+                <button class="button_action-sm">
+                  <i class="remove-pointer-events fas fa-thumbtack"></i>
+                </button>
+                <button class="button_action-sm">
+                  <i class="remove-pointer-events fas fa-times"></i>
+                </button>
+              </div>
+
+              <!-- post body -->
+              <div class="post_body">
+                <span
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellat totam quod, quae id vero similique iste ut, animi,
+                  placeat praesentium distinctio dolorem sed expedita pariatur
+                  provident? Libero odit quia eligendi.</span
+                >
+              </div>
+
+              <!-- post footer -->
+              <div class="post_footer">
+                <div class="post_button-container">
+                  <div class="post_button-container_content">
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#replyModal"
+                    >
+                      <i class="far fa-comment"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="post_button-container green">
+                  <div
+                    class="
+                      post_button-container_content
+                      active
+                      remove-pointer-events
+                    "
+                  >
+                    <button class="retweet-button">
+                      <i class="fas fa-retweet"></i>
+                    </button>
+                    <span class="number-retweets">2</span>
+                  </div>
+                </div>
+                <div class="post_button-container pink">
+                  <div class="post_button-container_content active">
+                    <button class="like-button">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <span class="number-likes">32</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Follower list -->
+      <div class="follower_wrapper mt-4">
+        <!-- Users content -->
+        <div class="follower-content_container container-fluid pb-3 mt-3">
+          <div class="row">
+            <div class="col-sm-12 col-md-5 col-lg-5">
+              <div class="follower-info d-flex align-items-center">
+                <!-- user avatar -->
+                <div class="user_image-container follower_image-container">
+                  <img
+                    src="./assets/img/avatar.png"
+                    alt="User's profile picture"
+                  />
+                </div>
+                <!-- user name -->
+                <div class="follower-name_container px-4">
+                  <h4>Minhch</h4>
+                  <span class="username">@minhch</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-7 col-lg-7">
+              <div
+                class="
+                  follower-choose-action_container
+                  d-flex
+                  justify-content-around
+                  align-items-center
+                "
+              >
+                <!-- follower -->
+                <button class="follow">
+                  <i class="fas fa-heart"></i>Follower <span>(20)</span>
+                </button>
+                <!-- message -->
+                <button class="follow message-follower">
+                  <i class="fas fa-comments"></i>Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Users content -->
+        <div class="follower-content_container container-fluid pb-3 mt-3">
+          <div class="row">
+            <div class="col-sm-12 col-md-5 col-lg-5">
+              <div class="follower-info d-flex align-items-center">
+                <!-- user avatar -->
+                <div class="user_image-container follower_image-container">
+                  <img
+                    src="./assets/img/avatar.png"
+                    alt="User's profile picture"
+                  />
+                </div>
+                <!-- user name -->
+                <div class="follower-name_container px-4">
+                  <h4>Minhch</h4>
+                  <span class="username">@minhch</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-7 col-lg-7">
+              <div
+                class="
+                  follower-choose-action_container
+                  d-flex
+                  justify-content-around
+                  align-items-center
+                "
+              >
+                <!-- follower -->
+                <button class="follow">
+                  <i class="fas fa-heart"></i>Follower <span>(20)</span>
+                </button>
+                <!-- message -->
+                <button class="follow message-follower">
+                  <i class="fas fa-comments"></i>Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Users content -->
+        <div class="follower-content_container container-fluid pb-3 mt-3">
+          <div class="row">
+            <div class="col-sm-12 col-md-5 col-lg-5">
+              <div class="follower-info d-flex align-items-center">
+                <!-- user avatar -->
+                <div class="user_image-container follower_image-container">
+                  <img
+                    src="./assets/img/avatar.png"
+                    alt="User's profile picture"
+                  />
+                </div>
+                <!-- user name -->
+                <div class="follower-name_container px-4">
+                  <h4>Minhch</h4>
+                  <span class="username">@minhch</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-7 col-lg-7">
+              <div
+                class="
+                  follower-choose-action_container
+                  d-flex
+                  justify-content-around
+                  align-items-center
+                "
+              >
+                <!-- follower -->
+                <button class="follow">
+                  <i class="fas fa-heart"></i>Follower <span>(20)</span>
+                </button>
+                <!-- message -->
+                <button class="follow message-follower">
+                  <i class="fas fa-comments"></i>Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
